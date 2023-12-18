@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Viewer Demo</title>
+    <style>
+      .wrapper {
+        width: 80vw;
+        height: 80vh;
+      }
+      model-viewer {
+        height: 100%;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Model Viewer Demo</h1>
+    <!-- Basic Model Viewer with a sample 3D model -->
+    <!-- Import the component -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
+    ></script>
+
+    <div class="wrapper">
+      <!-- Use it like any other HTML element -->
+      <model-viewer
+        alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+        src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb"
+        ar
+        environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr"
+        poster="https://modelviewer.dev/shared-assets/models/NeilArmstrong.webp"
+        shadow-intensity="1"
+        camera-controls
+        touch-action="pan-y"
+      ></model-viewer>
+    </div>
+    <p>
+      This is a simple model viewer demo using the &lt;model-viewer&gt; element.
+    </p>
+  </body>
+</html>
